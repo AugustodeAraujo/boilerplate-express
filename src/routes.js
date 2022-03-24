@@ -5,7 +5,9 @@ const routes = new Router();
 
 
 // Entry API
-routes.get('/', version);
+routes.get('/', (req, res) =>{
+  res.send('Hello World')
+});
 
 
 export default routes;
